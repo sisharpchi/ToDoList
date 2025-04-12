@@ -1,3 +1,4 @@
+using ToDoList.Api.Configurations;
 
 namespace ToDoList.Api
 {
@@ -12,6 +13,8 @@ namespace ToDoList.Api
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.AddDataBaseConnection();
 
             var app = builder.Build();
 
