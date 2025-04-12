@@ -15,6 +15,7 @@ namespace ToDoList.Api
             builder.Services.AddOpenApi();
 
             builder.AddDataBaseConnection();
+            builder.Services.AddFluentValidators();
 
             var app = builder.Build();
 
